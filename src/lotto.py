@@ -32,7 +32,6 @@ class Lotto(sp.Contract):
         sp.send(self.data.last_winner, winer_cut.value)
         self.data.balance -= winer_cut.value
 
-
     def quazyrandomNat(self):
         seed = sp.local('seed', sp.nat(0))
         seed.value = sp.as_nat(sp.timestamp_from_utc_now() - sp.timestamp(200))
@@ -84,8 +83,10 @@ class Lotto(sp.Contract):
             self.set_winner()
             self.reset_lottery()
 
-
-
+################################################                   
+#        TESTS AND COMPILATION TARGET
+################################################
++
 if "templates" not in __name__:
     @sp.add_test(name = "Lotto Lottery")
     def test():
