@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# Byte-compiled smarpy files
+compiled/
+tested/
+artifacts/
+test_results/
+
 # Distribution / packaging
 .Python
 build/

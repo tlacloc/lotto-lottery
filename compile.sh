@@ -1,0 +1,1 @@
+sp compile src/lotto.py artifacts/lotto --html
